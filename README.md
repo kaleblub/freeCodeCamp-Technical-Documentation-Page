@@ -1,7 +1,7 @@
 # freeCodeCamp-Technical-Documentation-Page
 
 ## Description
-
+For [freeCodeCamp's Legacy Responsive Web Design Certification](https://www.freecodecamp.org/learn/responsive-web-design/), they require five projects, this is the fourth of them, [Build a Technical Documentation Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
 
 ### User Stories / Things to Accomplish
 
@@ -21,3 +21,5 @@
    14. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
    15. Your technical documentation should use at least one media query
 
+<!-- ### View Code With [CodePen](https://codepen.io/kaleblub/pen/) -->
+<!-- ### [Demo Tribute Page](https://codepen.io/kaleblub/full/) -->
