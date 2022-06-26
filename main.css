@@ -1,3 +1,10 @@
+:root {
+	--dark-blue: #15133C;
+	--darkish-grey: #73777B;
+	--main-orange: #EC994B;
+	--main-white: #F1EEE9;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...}
 
@@ -8,7 +15,44 @@
 @media only screen and (min-width: 768px) {...}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+	body {
+		background-color: var(--dark-blue);
+		color: var(--main-white);
+	}
+
+	h1 {
+		color: var(--main-orange);
+	}
+
+	#navbar {
+		height: 100%;
+		width: 200px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		overflow-x: hidden;
+		padding-top: 20px;
+		border: solid 5px var(--dark-blue);
+		background-color: var(--darkish-grey);
+	}
+
+	.nav-link {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		color: var(--main-white);
+		display: block;
+	}
+
+	.nav-link:hover {
+		color: var(--main-orange);
+	}
+
+	#main-doc {
+		margin-left: 200px;
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
