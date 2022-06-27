@@ -33,9 +33,14 @@
 		top: 0;
 		left: 0;
 		overflow-x: hidden;
-		padding-top: 20px;
 		border: solid 5px var(--dark-blue);
 		background-color: var(--darkish-grey);
+	}
+
+	#nav-title {
+		border-bottom: 2px solid var(--dark-blue);
+		margin: 0;
+		padding: 15px 5px;
 	}
 
 	.nav-link {
@@ -43,14 +48,17 @@
 		text-decoration: none;
 		color: var(--main-white);
 		display: block;
+		border-bottom: 1px solid var(--dark-blue);
 	}
 
 	.nav-link:hover {
 		color: var(--main-orange);
+		background-color: var(--dark-blue);
+		transition: ease-in-out 0.5s;
 	}
 
 	#main-doc {
-		margin-left: 200px;
+		margin-left: 215px;
 	}
 }
 
