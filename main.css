@@ -16,51 +16,82 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	body {
-		background-color: var(--dark-blue);
-		color: var(--main-white);
-	}
-
 	h1 {
-		color: var(--main-orange);
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	h3 {
+		font-size: 20px;
 	}
 
-	#navbar {
-		height: 100%;
-		width: 200px;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		overflow-x: hidden;
-		border: solid 5px var(--dark-blue);
-		background-color: var(--darkish-grey);
-	}
-
-	#nav-title {
-		border-bottom: 2px solid var(--dark-blue);
-		margin: 0;
-		padding: 15px 5px;
-	}
-
-	.nav-link {
-		padding: 8px 8px 8px 32px;
-		text-decoration: none;
-		color: var(--main-white);
-		display: block;
-		border-bottom: 1px solid var(--dark-blue);
-	}
-
-	.nav-link:hover {
-		color: var(--main-orange);
-		background-color: var(--dark-blue);
-		transition: ease-in-out 0.5s;
-	}
-
-	#main-doc {
-		margin-left: 215px;
-	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+body {
+	background-color: var(--dark-blue);
+	color: var(--main-white);
+}
+
+h1 {
+	color: var(--main-orange);
+}
+
+#navbar {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	border: solid 5px var(--dark-blue);
+	border-radius: 10px;
+	background-color: var(--darkish-grey);
+}
+
+#nav-title {
+	border-bottom: 2px solid var(--dark-blue);
+	margin: 0;
+	padding: 15px 20px;
+}
+
+.nav-link {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	color: var(--main-white);
+	display: block;
+	border-bottom: 1px solid var(--dark-blue);
+}
+
+.nav-link:hover {
+	color: var(--main-orange);
+	background-color: var(--dark-blue);
+	transition: ease-in-out 0.5s;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+#main-doc {
+	margin-left: 215px;
+}
+
+code {
+	font-family: "Monospace";
+	background-color: #535659;
+	border: 0.5px solid var(--main-orange);
+	border-radius: 3px;
+}
+
+thead {
+	text-decoration: underline;
+}

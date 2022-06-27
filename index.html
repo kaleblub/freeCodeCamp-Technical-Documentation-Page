@@ -6,30 +6,40 @@
 </head>
 <body>
   <nav id="navbar">
-    <h1 id="nav-title">Python Technical Documentation</h1>
-    <a href="#" class="nav-link">Getting Started</a>
-    <a href="#" class="nav-link">Hello World</a>
-    <a href="#" class="nav-link">Data Types(Primitive)</a>
-    <a href="#" class="nav-link">Variables</a>
-    <a href="#" class="nav-link">Data Types(Non-Primitive)</a>
-    <a href="#" class="nav-link">Arithmetic Operators</a>
-    <a href="#" class="nav-link">Comparison Operators</a>
-    <a href="#" class="nav-link">If/elif/else Statement</a>
-    <a href="#" class="nav-link">Loops</a>
+    <h1 id="nav-title">Python Beginner Tutorial</h1>
+    <ul>
+    <li><a href="#" class="nav-link">Getting Started</a></li>
+    <li><a href="#" class="nav-link">Hello World</a></li>
+    <li><a href="#" class="nav-link">Data Types(Primitive)</a></li>
+    <li><a href="#" class="nav-link">Variables</a></li>
+    <li><a href="#" class="nav-link">Data Types(Non-Primitive)</a></li>
+    <li><a href="#" class="nav-link">Arithmetic Operators</a></li>
+    <li><a href="#" class="nav-link">Comparison Operators</a></li>
+    <li><a href="#" class="nav-link">If/elif/else Statement</a></li>
+    <li><a href="#" class="nav-link">Loops</a></li>
+  </ul>
   </nav>
   <main id="main-doc">
     <section class="main-section" id="Getting_Started">
       <h1>Getting Started</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h2>Download</h2>
+      <h2>Introduction</h2>
+      <p>This is my first ever tutorial/documentation. It will be covering the fundamentals of Python 3 based off of my experience programming with python over the past few years. Python is a fantastic programming language with a huge range of uses in the world. Personally, my favorite language is python, for it's intuitive nature and English-like syntax. I hope you can follow along and grow to enjoy it as well.</p>
+      <h2>Download/Install</h2>
+      <h3>Linux</h3>
+      <p>For Linux systems, I will only describe how to install Python on Ubuntu Linux machines, but other distros are very similar and are easy to find with a quick Google Search.</p>
+      <p>To see which version of Python 3 you may already have installed or confirm that it is not installed, open your command prompt and run:</p>
       <code>
-        $ git clone https://github.com/a;sdfpasda
+        $ python3 --version
       </code>
+      <p>To upgrade to a newer version or install python 3.10 fresh, run the following commands:</p>
+      <code>
+        $ sudo apt-get update
+        $ sudo apt-get install python3.10
+      </code>
+      <h3>Windows</h3>
+      <p>For those of you with Windows as your Operating System, you can follow this tutorial on <a href="https://www.tutorialspoint.com/how-to-install-python-in-windows">how to install Python in Windows</a>.</p>
+      <h3>Mac OS</h3>
+      <p>For all of you Mac OS users, you can follow this tutorial on <a href="https://www.dataquest.io/blog/installing-python-on-mac/">how to install Python on Mac</a>.</p>
     </section>
     <section class="main-section" id="Hello_World">
       <h1>Hello World</h1>
@@ -41,12 +51,34 @@
     <section class="main-section" id="Data_Types(Primitive)">
       <h1>Data Types(Primitive)</h1>
       <p>This section deals with explaining the different primitive data types that are available in Python.</p>
-      <ul>
+<!--       <ul>
         <li>Integer  -  Whole Numbers  -  5, 8, 0, -85</li>
         <li>String  -  In Between ""/''  -  "Hello"</li>
         <li>Float  -  Decimal Number  -  2.3 0.0 -9.99</li>
         <li>Boolean  -  True or False</li>
-      </ul>
+      </ul> -->
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Examples</td>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Integer</td><td>Whole Numbers</td><td>5, 8, 0, -85</td>
+        </tr>
+        <tr>
+          <td>String</td><td>In Between ""/''</td><td>"Hello"</td>
+        </tr>
+        <tr>
+          <td>Float</td><td>Decimal Number</td><td>2.3 0.0 -9.99</td>
+        </tr>
+        <tr>
+          <td>Boolean</td><td>True or False</td>
+        </tr>
+      </tbody>
+      </table>
     </section>
     <section class="main-section" id="Variables">
       <h1>Variables</h1>
@@ -70,37 +102,106 @@
     <section class="main-section" id="Data_Types(Non-Primitive)">
       <h1>Data Types(Non-Primitive)</h1>
       <p>This section covers the remaining Data Types, Non-Primitives. This term refers tooooooooooooooooooooooooo????</p>
-      <ul>
+      <!-- <ul>
         <li>List  -  In between square brackets  -  list = [1,5,-5.2,"Hello"]</li>
         <li>Set  -  In between curly brackets  -  set = {1,5,-5.2,"Hello"}</li>
         <li>Dictionary  -  It contains key-value pairs  -  dict = {"name": "Kaleblub", "age":24, "is_awesome":True}</li>
-        <li>Tuple  -  In between (). Cannot change value of it's element  -  tuple = (1,5,-5.2,"Hello")</li>
-      </ul>
+      </ul> -->
+        <table>
+          <thead>
+            <tr><td>Name</td><td>Description</td><td>Examples</td></tr>
+          </thead>  
+          <tbody>
+            <tr>
+              <td>Tuple</td><td>In between (). Cannot change value of it's element</td><td><code>tuple = (1,5,-5.2,"Hello")</code></td>
+            </tr>
+            <tr>
+              <td>List</td><td>In between square brackets</td><td><code>list = [1,5,-5.2,"Hello"]</code></td>
+            </tr>
+            <tr>
+              <td>Set</td><td>In between curly brackets</td><td><code>set = {1,5,-5.2,"Hello"}</code></td>
+            </tr>
+            <tr>
+              <td>Dictionary</td><td>It contains key-value pairs</td><td><code>dict = {"name": "Kaleblub", "age":24, "is_awesome":True}</code></td>
+            </tr>
+            <tr>
+              <td>Tuple</td><td>In between (). Cannot change value of it's element</td><td><code>tuple = (1,5,-5.2,"Hello")</code></td>
+            </tr>
+          </tbody>
+        </table>
     </section>
     <section class="main-section" id="Arithmetic_Operators">
       <h1>Arithmetic Operators</h1>
       <p>This section covers all of the available Operators to perform Arithmetic in Python.</p>
-      <ul>
-        <li>+ for Addition  > 100 + 150 = 250</li>
-        <li>- for Subtraction  > 50 - 30 = 20</li>
-        <li>* for Multiplication  > 3 * 3 = 9</li>
-        <li>/ for Division  > 900 / 10 = 90</li>
-        <li>% for Modulus  > 7 % 4 = 3</li>
-        <li>** for Exponentiation  > 4**2 = 16</li>
-        <li>// for Floor Division  > 7 // 2 = 3</li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <td>Sign</td><td>Description</td><td>Usage Example</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>+</td><td>for Addition</td><td><code>100 + 150 = 250</code></td>
+          </tr>
+          <tr>
+            <td>-</td><td>for Subtraction</td><td><code>50 - 30 = 20</code></td>
+          </tr>
+          <tr>
+            <td>*</td><td>for Multiplication</td><td><code>3 * 3 = 9</code></td>
+          </tr>
+          <tr>
+            <td>/</td><td>for Division</td><td><code>900 / 10 = 90</code></td>
+          </tr>
+          <tr>
+            <td>%</td><td>for Modulus</td><td><code>7 % 4 = 3</code></td>
+          </tr>
+          <tr>
+            <td>**</td><td>for Exponentiation</td><td><code>4**2 = 16</code></td>
+          </tr>
+          <tr>
+            <td>//</td><td>for Floor division</td><td><code>7 // 2 = 3</code></td>
+        </tr>
+        </tbody>
+      </table>
     </section>
     <section class="main-section" id="Comparison_Operators">
       <h1>Comparison Operators</h1>
       <p>This section covers all of the available Operators to Compare different pieces of data in Python.</p>
-      <ul>
+      <!-- <ul>
         <li>== is equal to</li>
         <li>!= not equal to</li>
         <li>< less than</li>
         <li>> Greater than</li>
         <li><= Less than or equal to</li>
         <li>>= Greater than or equal to</li>
-      </ul>
+      </ul> -->
+      <table>
+        <thead>
+          <tr>
+            <td>Sign</td><td>Description/Name</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>==</td><td>is equal to</td>
+          </tr>
+          <tr>
+            <td>!=</td><td>not equal to</td>
+          </tr>
+          <tr>
+            <td><</td><td>less than</td>
+          </tr>
+          <tr>
+            <td>></td><td>Greater than</td>
+          </tr>
+          <tr>
+            <td><=</td><td>Less than or equal to</td>
+          </tr>
+          <tr>
+            <td>>=</td><td>Greater than or equal to</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section class="main-section" id="If/elif/else_Statement">
       <h1>If/elif/else Statement</h1>
